@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Про Амирлана</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -10,11 +11,11 @@
         <nav>
             <a href ="#about"> Обо мне</a>
             <a href ="#sport">спорт</a>
-            <a href ="#Contact">Контакты</a>
+            <a href ="#contact">Контакты</a>
         </nav>  
     </header>
     <main>
-        <section id="about">
+        <section class="card"id="about">
         <ul>
             <li>Кушать</li>
             <li>Спать</li>
@@ -40,20 +41,21 @@
             <p>Привет! Тут я расказываю о себе и делюсь полезной информацией о себе.</p>
             <p>Я люблю прогграмировать и в свободное время изучаю что новое в прогграмирование.</p>
             <P>Спасибо что посетили мой сайт.Надеюсь вы узнали что то новое обо мне.</P>
+            <img src="aaaaa.png" alt="Моя фотография">
         <input type="text" placeholder="Имя">
         <br>
         <input type="number" placeholder="Возраст">
         <br>
         </section>
+        <section id="sport">
         <hr>
-        <section id="Sport">
             <h2>О моем спорте</h2>
             <p>Я занимаюсь боксом на протяжение 1 года.</p>
         <label for ="message">Сообщение: </label>
         <textarea id="message" placeholder="Напишине сообщение"></textarea> 
-        <img scr="./Языки пргграмирования.jpg" witch="500" alt="языки програмировамния">
         </section>
         <hr>
+        <section id="contact">
         <form>
             <label for="name">Имя:</label>
             <input id="name"type="text" placeholder="Введите имя" required>
@@ -66,6 +68,7 @@
             <br>
             <button type="sumbit">Отправить</button>
         </form>
+        </section>
     </main>
     <footer>
         <p>Сайт создан Амирланом в 2026 году.</p>
