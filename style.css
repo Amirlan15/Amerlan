@@ -1,14 +1,14 @@
 h1 {
-    color:rgb(0, 255, 255);
+    color:rgba(0, 0, 0, 0.856);
     font-size:40px;
 }
 P,
  li {
-    color: rgb(107, 255, 223);
+    color: rgba(0, 0, 0, 0.562);
     line-height: 1,6;
 }
 body {
-    background-color:rgba(20, 43, 250, 0.253);
+    background-color:rgb(255, 255, 255);
 }
 body {
     font-family: Verdana, Georgia;
@@ -22,17 +22,17 @@ h1 {
     text-align: center;
 }
 .card {
-    color: rgb(94, 255, 220);
-    background-color:rgba(147, 151, 146, 0.486);
+    color: rgb(0, 0, 0, 0.562);
+    background-color:rgba(133, 136, 132, 0.486);
     padding: 20px;
     margin: 15px;
 
 }
 th {
-    background-color:rgb(78, 128, 125);
+    background-color:rgba(36, 43, 42, 0.212);
 }
 .card{
-    border: 0.5px solid rgb(128, 0, 255);
+    border: 0.5px solid rgba(0, 0, 0, 0.377);
     max-width: 700px;
     border-radius:30px;
     margin: 20px auto;
@@ -49,4 +49,72 @@ header {
     text-align: center;
     color:var(--white);
     background: linear-gradient(135deg, var(--red), var(--blue));
+}
+main section {
+    transform: 0.3;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+img {
+    transform: 0.3s;
+}
+img:hover {
+    transform: rotate(1deg) scale(1.05);
+}
+.card {
+    transform: 0.3s;
+}
+.card:hover {
+    transform: rotate(2deg) scale(1.05);
+}
+main section {
+    transition: 0.3s;
+}
+
+main section:hover {
+    transform: scale(1.02);
+}
+.card {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 700px) {
+    nav a {
+        display:block;
+    }
+    header {
+        padding:40px 16px;
+    }
+    nav a { width: 100%;
+    display:block;
+    }
+    main section {
+        padding: 20px;
+    }
+    #timeline table {
+        win-width:520px;
+    }
+    button,
+    button[type="reset"] {
+        width:100%;
+        margin-top:10px;
+        margin-left:0;
+    }
 }
