@@ -2,13 +2,13 @@ h1 {
     color:rgba(0, 0, 0, 0.856);
     font-size:40px;
 }
-P,
+p,
  li {
     color: rgba(0, 0, 0, 0.562);
     line-height: 1,6;
 }
 body {
-    background-color:rgb(255, 255, 255);
+    background-color:rgba(240, 226, 226, 0.801);
 }
 body {
     font-family: Verdana, Georgia;
@@ -28,6 +28,20 @@ h1 {
     margin: 15px;
 
 }
+h2{
+    color: rgb(0, 0, 0, 0.562);
+    background-color:rgba(133, 136, 132, 0.486);
+    border: 0.5px solid rgba(0, 0, 0, 0.377);
+    max-width: 700px;
+    border-radius:30px;
+    margin: 20px auto;
+}  
+p {
+    border: 0.5px solid rgba(0, 0, 0, 0.377);
+    max-width: 700px;
+    border-radius:30px;
+    margin: 20px auto;
+}  
 th {
     background-color:rgba(36, 43, 42, 0.212);
 }
@@ -83,7 +97,24 @@ main section:hover {
 .card {
     animation: fadeIn 1s ease;
 }
-
+input {
+    border: 0.5px solid rgba(0, 0, 0, 0.377);
+    max-width: 700px;
+    border-radius:30px;
+    margin: 20px auto;
+}
+textarea {
+    border: 0.5px solid rgba(0, 0, 0, 0.377);
+    max-width: 700px;
+    border-radius:30px;
+    margin: 20px auto;
+}
+button {
+    border: 0.5px solid rgba(0, 0, 0, 0.377);
+    max-width: 700px;
+    border-radius:30px;
+    margin: 20px auto;
+}
 @keyframes fadeIn {
     from {
         opacity:0;
